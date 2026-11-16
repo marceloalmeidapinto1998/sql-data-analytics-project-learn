@@ -1,37 +1,41 @@
-# SQL Data Analytics Project
+<h3 align="left">SQL Data Analytics Project</h3>
 
-[![Built with Data With Baraa](https://img.shields.io/badge/Built_with-Data_With_Baraa-F5B301?style=for-the-badge)](https://github.com/DataWithBaraa/sql-data-analytics-project)
+<h5 align="left">Overview</h5>
 
-The materials of the data analytics project: the data, every query from the videos, and the project roadmap.
+<p>This repository contains the complete materials for the SQL data analytics project, including the raw data, all SQL queries used throughout the videos, and the comprehensive project roadmap.</p>
 
-You explore a sales database step by step, then go deeper with trends, segments and two full reports.
+<p>In this project, you will explore a sales database step-by-step, uncover business trends, analyze customer and product segments, and build two full analytical reports.</p>
 
-**Open the setup guide in the `00_setup` folder.** It walks you through installing SQL Server and creating the database, on Windows and Mac, with the fixes for the common errors.
+<p>To get started, open the setup guide located in the <code>00_setup</code> folder. It provides step-by-step instructions for installing SQL Server and creating the database on both Windows and Mac, along with troubleshooting steps for common errors.</p>
 
-```
+<h5 align="left">Repository Structure</h5>
+
+<pre>
 sql-data-analytics-project/
-├── 00_setup/                        the setup guide, and the one-click Docker start for Mac
-├── 01_datasets/                     the data, as a backup and as CSV files
-│   ├── DataWarehouseAnalytics.bak   the database, ready to restore
-│   └── csv-files/                   the same data, to build the database yourself
-├── 02_docs/                         the project roadmap and notes
-└── 03_scripts/                      the queries, in the order of the videos
-    └── 00_init_database.sql         builds the database from the CSV files
-```
+├── 00_setup/                        # The setup guide and one-click Docker start for Mac
+├── 01_datasets/                     # The data as a backup file and as CSV files
+│   ├── DataWarehouseAnalytics.bak   # The pre-built database ready for restoration
+│   └── csv-files/                   # Raw CSV files to build the database manually
+├── 02_docs/                         # Project roadmap and supplementary notes
+└── 03_scripts/                      # SQL queries ordered sequentially matching the videos
+    └── 00_init_database.sql         # Script to build the database from CSV files
+</pre>
 
-Get the database in one of two ways:
+<h5 align="left">Database Setup</h5>
 
-- Restore `01_datasets/DataWarehouseAnalytics.bak` in SSMS. It needs SQL Server 2022 or newer.
-- Or run `03_scripts/00_init_database.sql`. It builds the database from the CSV files in `C:\sql\sql-data-analytics-project\01_datasets\csv-files\`.
+<p>You can set up the database using one of two methods:</p>
 
----
+<ul>
+  <li><strong>Restore the Backup:</strong> Restore <code>01_datasets/DataWarehouseAnalytics.bak</code> directly in SQL Server Management Studio (SSMS). Requires SQL Server 2022 or newer.</li>
+  <li><strong>Run Initialization Script:</strong> Execute <code>03_scripts/00_init_database.sql</code>. Note that this script builds the database from the CSV files located at <code>C:\sql\sql-data-analytics-project\01_datasets\csv-files\</code>.</li>
+</ul>
 
-## Project Roadmap
+<h5 align="left">Project Roadmap</h5>
 
-![The project roadmap](02_docs/Project%20Roadmap.png)
+<p>The project is divided into two main parts, with scripts organized sequentially:</p>
 
-The project has two parts, and the scripts follow them:
-
-- **Exploratory data analysis**, scripts `01` to `06`: you get to know the data, from the tables and dates to the big numbers and the top performers.
-- **Advanced analytics**, scripts `07` to `13`: you go deeper with trends, running totals, performance, part-to-whole and segments. Two reports close the project, one for customers and one for products.
+<ul>
+  <li><strong>Exploratory Data Analysis (Scripts 01 to 06):</strong> Get familiar with the schema, explore tables and date ranges, calculate high-level totals, and identify top performers.</li>
+  <li><strong>Advanced Analytics (Scripts 07 to 13):</strong> Dive deeper into performance trends, running totals, part-to-whole analysis, and customer/product segmentation. The project concludes with two comprehensive business reports focusing on customers and products.</li>
+</ul>
 
